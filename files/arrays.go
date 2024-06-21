@@ -23,7 +23,7 @@ func main() {
 	fmt.Println("Enter your Last Name:")
 	fmt.Scanln(&lastName)
 
-	fmt.Println("Enter your email:")
+	fmt.Println("Enter your Email:")
 	fmt.Scanln(&email)
 
 	fmt.Println("Enter number of Tickets:")
@@ -31,7 +31,7 @@ func main() {
 
 	// book tickets in system
 	remainingTickets = remainingTickets - userTickets
-	bookings = append(bookings, firstName, " "+ lastName)
+	bookings = append(bookings, firstName, " " + lastName)
 
 	fmt.Printf("Thank you %v %v for booking %v tickets. You will receive a confirmation email at %v\n", firstName, lastName, userTickets, email)
 	fmt.Printf("%v tickets remaining for %v\n", remainingTickets, conferenceName)
